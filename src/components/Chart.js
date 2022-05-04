@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react'
 import * as d3 from 'd3'
-import d3ip from "d3-tip"
 import store from '../store' 
 import { parse } from '../modules/dataParse'
 
@@ -27,6 +26,8 @@ const Chart = () => {
 
   //console.log(labels.splice(0,100))
   //console.log(frequencies.splice(0,100))
+
+  const largestFrequency = frequencies[0]
 
  
 
@@ -272,7 +273,7 @@ const Chart = () => {
   <div className="h-full p-0">
     <svg ref={svgRef} >
     </svg>
-    
+        
   </div>
   )
 }
