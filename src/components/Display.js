@@ -45,9 +45,9 @@ const Display = () => {
   } else {
     console.log("no data")
     return (
-      <div className="p-24 h-full flex flex-col justify-around items-center">
-        <p className="text-light_text font-sans text-sm font-semibold">No data</p>
-             <Button onClick={handleUpload} text="Upload again"/>
+      <div className="flex flex-col justify-center items-center">
+        <p className="text-light_text font-mono text-sm p-20">no data</p>
+        <Button onClick={handleUpload} text="Upload again"/>
       </div>
     )
   }

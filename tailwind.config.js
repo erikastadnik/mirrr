@@ -13,6 +13,8 @@ module.exports = {
     colors: ({ colors }) => ({
       black: "#000000",
       back: "#DDDDDD",
+      hover: "#596375",
+      click:  "#9BA4B4",
       fill: "#F1F6F9",
       selection: "#9BA4B4",
       light_text: "#394867",

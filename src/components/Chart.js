@@ -143,6 +143,7 @@ const Chart = () => {
               .transition()
               .duration(transitionLength)
               .attr("fill", colours.selection)
+              
               //.attr("r", d => d.frequency/7*bubbleIncrease) 
               //this.parentNode.appendChild(this)
           //     obj[index].frequency = obj[index].frequency*bubbleIncrease
@@ -252,7 +253,7 @@ const Chart = () => {
     const simulation = d3.forceSimulation(obj)
           .force("center", d3.forceCenter().x(width / 2).y(height / 2)) // Attraction to the center of the svg area
           .force("charge", d3.forceManyBody().strength(0.01)) // Nodes are attracted one each other of value is > 0
-          .force("collide", d3.forceCollide().strength(1).radius(function(d) {return radius(d) + 5}).iterations(1)) // Force that avoids circle overlapping
+          .force("collide", d3.forceCollide().strength(0.5).radius(function(d) {return radius(d) + 5}).iterations(1)) // Force that avoids circle overlapping
   
           simulation
           .nodes(obj)

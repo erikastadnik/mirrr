@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom"
 import Chart from './Chart'
 import Button from './Button'
-import background from '../assets/Video1.mp4'
+import HomeBubbles from './HomeBubbles'
 
 const Home = () => {
 
@@ -11,13 +11,17 @@ const Home = () => {
     navigate('/upload')
   }
 
+   
+
   return (
       <div className="flex flex-col justify-center items-center"> 
-         <video className="p-5 object-cover w-full h-full blur-sm" src={background} autoPlay loop muted />     
+             <HomeBubbles/>
           <div className="absolute drop-shadow-2xl">
-              <Button onClick={handleClick} text="Visualize my data"/>
+              <Button onClick={handleClick} text="Visualize my search history"/>
           </div>          
-      </div>    
+      </div>  
+    
+      
   )
 
 }
