@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/react-gh-pages/static/css/main.198a0559.css",
-    "main.js": "/react-gh-pages/static/js/main.85601f17.js",
-    "static/media/Video1.mp4": "/react-gh-pages/static/media/Video1.333fb8f49834732a3844.mp4",
-    "static/media/Instructions-02.png": "/react-gh-pages/static/media/Instructions-02.9902e6ce95f590a49336.png",
-    "static/media/Instructions-01.png": "/react-gh-pages/static/media/Instructions-01.1bc91c621d11a39006da.png",
+    "main.css": "/react-gh-pages/static/css/main.d4206153.css",
+    "main.js": "/react-gh-pages/static/js/main.30e06ac5.js",
+    "static/media/Instructions-02.png": "/react-gh-pages/static/media/Instructions-02.fa8c993f18f0f007a56b.png",
+    "static/media/Instructions-03.png": "/react-gh-pages/static/media/Instructions-03.28e1bcf92b1a3d659a83.png",
+    "static/media/Instructions-01.png": "/react-gh-pages/static/media/Instructions-01.361f01593722d36a29e6.png",
     "index.html": "/react-gh-pages/index.html",
-    "main.198a0559.css.map": "/react-gh-pages/static/css/main.198a0559.css.map",
-    "main.85601f17.js.map": "/react-gh-pages/static/js/main.85601f17.js.map"
+    "main.d4206153.css.map": "/react-gh-pages/static/css/main.d4206153.css.map",
+    "main.30e06ac5.js.map": "/react-gh-pages/static/js/main.30e06ac5.js.map"
   },
   "entrypoints": [
-    "static/css/main.198a0559.css",
-    "static/js/main.85601f17.js"
+    "static/css/main.d4206153.css",
+    "static/js/main.30e06ac5.js"
   ]
 }
