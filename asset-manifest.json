@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/react-gh-pages/static/css/main.d4206153.css",
-    "main.js": "/react-gh-pages/static/js/main.30e06ac5.js",
-    "static/media/Instructions-02.png": "/react-gh-pages/static/media/Instructions-02.fa8c993f18f0f007a56b.png",
-    "static/media/Instructions-03.png": "/react-gh-pages/static/media/Instructions-03.28e1bcf92b1a3d659a83.png",
-    "static/media/Instructions-01.png": "/react-gh-pages/static/media/Instructions-01.361f01593722d36a29e6.png",
-    "index.html": "/react-gh-pages/index.html",
-    "main.d4206153.css.map": "/react-gh-pages/static/css/main.d4206153.css.map",
-    "main.30e06ac5.js.map": "/react-gh-pages/static/js/main.30e06ac5.js.map"
+    "main.css": "/mirrr/static/css/main.d4206153.css",
+    "main.js": "/mirrr/static/js/main.178dd117.js",
+    "static/media/Instructions-02.png": "/mirrr/static/media/Instructions-02.fa8c993f18f0f007a56b.png",
+    "static/media/Instructions-03.png": "/mirrr/static/media/Instructions-03.28e1bcf92b1a3d659a83.png",
+    "static/media/Instructions-01.png": "/mirrr/static/media/Instructions-01.361f01593722d36a29e6.png",
+    "index.html": "/mirrr/index.html",
+    "main.d4206153.css.map": "/mirrr/static/css/main.d4206153.css.map",
+    "main.178dd117.js.map": "/mirrr/static/js/main.178dd117.js.map"
   },
   "entrypoints": [
     "static/css/main.d4206153.css",
-    "static/js/main.30e06ac5.js"
+    "static/js/main.178dd117.js"
   ]
 }
