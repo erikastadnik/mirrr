@@ -24,7 +24,7 @@ const Upload = () => {
     const hasData = store.getState().data
     event.preventDefault()
     if (hasData) {
-      navigate('/data')
+      navigate('/mirrr/data')
     } else {
       console.log('error')
       setBorder(borderError)

@@ -16,11 +16,11 @@ const Display = () => {
 
   const handleClear = () => {
     store.dispatch(uploadData(null))
-    navigate('/')
+    navigate('/mirrr/')
   }
 
   const handleUpload = () => {
-      navigate('/upload')
+      navigate('/mirrr/upload')
   }
 
   if (data) {

@@ -37,9 +37,9 @@ const App = () => {
         
           <div className="flex h-full place-content-center">
           <Routes>
-            <Route path="/" element={<Home />}/>
-            <Route path="/upload" element={<Upload />}/>
-            <Route path="/data" element={<Display />}/>           
+            <Route path="mirrr/" element={<Home />}/>
+            <Route path="mirrr/upload" element={<Upload />}/>
+            <Route path="mirrr/data" element={<Display />}/>           
           </Routes>
           </div>
         

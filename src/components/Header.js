@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <div className="max-w-10xl mx-auto px-0">
       <div className="border-b-2 border-fill divide-slate-800 py-7 px-10 bg-white items-center flex justify-between content-center ">
-          <Link to="/" className="text-4xl font-bold font-sans text-text">mirr'r</Link> 
+          <Link to="/mirrr/" className="text-4xl font-bold font-sans text-text">mirr'r</Link> 
       </div>
     </div>
   )

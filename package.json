@@ -1,7 +1,7 @@
 {
   "name": "project_mirror",
   "version": "0.1.0",
-  "homepage": "https://mirrr.github.io/react-gh-pages",
+  "homepage": "https://erikastadnik.github.io/mirrr/",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.9.0",
