@@ -61,14 +61,14 @@ const Upload = () => {
 
         <div className="basis-1/2 px-10 flex flex-col text-text">
             <div id="text">
-                <p  className="basis-1/2 text-xs text-text py-10">In order for mirr'r to visualize your data, you need to upload it here. It is extremely secure as no data that you upload ever leaves your browser and is removed upon refresh of the page. Your information won't be stored anywhere and you will be able to see the visualization only until you refresh the page. Only you can see the visualization.</p>
+                <p  className="basis-1/2 text-xs text-text py-10">For mirr'r to visualize your data, you need to upload it here. It is incredibly secure as no data you upload ever leaves your browser. Refreshing the page will entirely remove the data from the app. Mirr'r won't store your information anywhere. You will be able to see the visualization only until you refresh the page. Only you can see the visualization.</p>
                 <p className="text-xl py-10">5 quick steps to get your data</p>
                 <p className="py-2 text-sm">Note: this app only works with a Google Chrome browser.</p>
-                <p className={textSpacing}>1. Go  <a href={ref} target="_blank" className="underline underline-offset-1 text-selection">here</a> to download a plug in for easy personal data access.</p>
-                <p className={textSpacing}>2. Add the plug-in to your chrome browser.</p>
-                <p className={textSpacing}>3. An icon will appear in the top right of you tab. Click on the icon. In case you only see the puzzle icon, click on the puzzle and choose "Export Chrome History" from the drop-down menu.</p>
+                <p className={textSpacing}>1. Go  <a href={ref} target="_blank" className="underline underline-offset-1 text-selection">here</a> to download a plug-in for easy personal data access.</p>
+                <p className={textSpacing}>2. Add the plug-in to your Google Chrome browser.</p>
+                <p className={textSpacing}>3. An icon will appear in the top right of your tab. Click on the icon. If you only see the puzzle icon, click on the puzzle and choose "Export Chrome History" from the drop-down menu.</p>
                 <p className={textSpacing}>4. Choose how far back you want to see data from and click on "JSON" from the drop-down menu. Make sure to choose "JSON" as no other file will work.</p>
-                <p className={textSpacing}>5. The file will immediately download. Once it has downloaded, upload it below.</p>
+                <p className={textSpacing}>5. The file will immediately download. Once it has been downloaded, upload it below.</p>
             </div>
             <div className="flex w-full">
               
