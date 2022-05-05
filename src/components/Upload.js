@@ -6,6 +6,7 @@ import {useState} from 'react'
 import addToChrome from '../assets/Instructions-01.png'
 import dropDown from '../assets/Instructions-02.png'
 import pin from '../assets/Instructions-03.png'
+import Footer from './Footer'
 
 
 
@@ -55,6 +56,7 @@ const Upload = () => {
   //             <img className="w-35 p-10" src={dropDown} alt="Download the JSON file" />
 
   return (
+   
       <div className="flex w-full">
 
         <div className="basis-1/4"></div>
@@ -86,7 +88,8 @@ const Upload = () => {
 
         <div className="basis-1/4"></div>
             
-      </div>      
+      </div>
+      
   )
 
 }

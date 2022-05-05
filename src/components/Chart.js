@@ -69,7 +69,7 @@ const Chart = () => {
   useEffect(()=> {
     //setting up svg
     const width = 2000
-    const height = 800
+    const height = 100
     const transitionLength = 100
     //const bubbleIncrease = 1.1
 

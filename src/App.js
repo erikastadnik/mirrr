@@ -43,7 +43,7 @@ const App = () => {
           </Routes>
           </div>
         
-          <div className="flex-none">
+          <div className="fixed inset-x-0 bottom-0">
            <Footer />
           </div>
         </div>

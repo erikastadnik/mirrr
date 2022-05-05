@@ -8,8 +8,8 @@ const colours = {
   text: "#14274E"
 }
 
-    const width = 2000
-    const height = 1000
+    const width = 3000
+    const height = 100
     const transitionLength = 100
     const bubbleIncrease = 2
 
@@ -109,7 +109,7 @@ const HomeBubbles = () => {
 
 
   return (
-  <div className="h-full">
+  <div className="h-full w-full">
     <svg ref={svgRef} >
     </svg>
   </div>

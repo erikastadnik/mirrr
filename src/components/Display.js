@@ -29,14 +29,14 @@ const Display = () => {
 
     return(
       <div className="flex w-full">
-        <div className="flex basis-4/5 p-6 bg-white"> 
+        <div className="flex basis-5/6 "> 
           <Chart />
         </div>
-        <div className="flex flex-col justify-between basis-1/5 p-6">
+        <div className="flex flex-col justify-between basis-1/6 p-6">
           <div className="h-96 text-light_text hover:text-text text-xs w-full overflow-hidden hover:overflow-auto font-mono ">
             {parsedData.map(x => <p key={parsedData.indexOf(x)}>{x[0]}: {x[1]}</p>)}
           </div>
-          <div className="">
+          <div className="p-20">
              <Button onClick={handleClear} text="Clear"/>
           </div>
         </div>

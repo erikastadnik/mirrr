@@ -15,10 +15,11 @@ const Home = () => {
 
   return (
       <div className="flex flex-col justify-center items-center"> 
-             <HomeBubbles/>
-          <div className="absolute drop-shadow-2xl">
+          <HomeBubbles />
+          <div className="fixed drop-shadow-2xl">
               <Button onClick={handleClick} text="Visualize my search history"/>
-          </div>          
+          </div>   
+                 
       </div>  
     
       
