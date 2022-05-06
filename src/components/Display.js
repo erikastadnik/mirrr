@@ -21,7 +21,7 @@ const Display = () => {
     if (fetchedData){
       setData(fetchedData)
     }
-  },)
+  }, [data])
 
   const navigate = useNavigate()
 
