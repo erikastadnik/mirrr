@@ -43,7 +43,7 @@ const App = () => {
             <Route path="mirrr/upload" element={<Upload />}/>
             
             <Route path="mirrr/data" element={<Display />}/> 
-            <Route element={<Home />}/>
+            <Route path="*" element={<NoData />} />
                                 
           </Routes>
           </div>
