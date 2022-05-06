@@ -18,8 +18,10 @@ const Display = () => {
 
   useEffect(() => {
     const fetchedData = store.getState().data
-    setData(fetchedData)
-  }, [data])
+    if (fetchedData){
+      setData(fetchedData)
+    }
+  },)
 
   const navigate = useNavigate()
 
@@ -41,9 +43,6 @@ const Display = () => {
 
   
 
-  console.log(data)
-
-  
 
   
 
