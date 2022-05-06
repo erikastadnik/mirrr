@@ -5,9 +5,6 @@ import { uploadData } from '../reducers/dataReducer'
 import Chart from './Chart'
 import { parse } from '../modules/dataParse'
 import Button from './Button'
-//import axios from 'axios'
-
-
 
 
 const Display = () => {
@@ -35,23 +32,18 @@ const Display = () => {
     navigate('/mirrr/upload')
   }
 
-  // axios
-  //     .get(store.getState().data)
-  //     .then(response => {
-  //       console.log(response)
-  //     })
-
   
-
-
   
+  console.log(onbeforeunload)
+
+ 
 
   if (data) {
 
     const parsedData = parse(data)
     return(
       <div className="flex w-full">
-        {/* <div className="flex basis-5/6 "> 
+        <div className="flex basis-5/6 "> 
           <Chart />
         </div>
         <div className="flex flex-col justify-between basis-1/6 p-6">
@@ -61,7 +53,7 @@ const Display = () => {
           <div className="p-20">
              <Button onClick={handleClear} text="Clear"/>
           </div>
-        </div> */}
+        </div>
       </div>
     )
   } else {
