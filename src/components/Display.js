@@ -1,10 +1,11 @@
 import React, {useState} from 'react'
-import { useNavigate } from "react-router-dom"
+import { useNavigate, Navigate} from "react-router-dom"
 import store from '../store'
 import { uploadData } from '../reducers/dataReducer'
 import Chart from './Chart'
 import { parse } from '../modules/dataParse'
 import Button from './Button'
+//import axios from 'axios'
 
 
 
@@ -23,23 +24,23 @@ const Display = () => {
 
   }
 
-  window.onbeforeunload = (event) => {
-    setData(null)
-    store.dispatch(uploadData(null))
-    console.log("unloaded")
-  }
+  // axios
+  //     .get(store.getState().data)
+  //     .then(response => {
+  //       console.log(response)
+  //     })
 
-  const handleUpload = () => {
-      navigate('/mirrr/upload')
-      
-  }
+  
 
   console.log(data)
+
+  
+
+  
 
   if (data) {
 
     const parsedData = parse(data)
-
     return(
       <div className="flex w-full">
         <div className="flex basis-5/6 "> 
@@ -56,14 +57,10 @@ const Display = () => {
       </div>
     )
   } else {
-    console.log("no data")
-    return (
-      <div className="flex flex-col justify-center items-center">
-        <p className="text-light_text font-mono text-sm p-20">no data</p>
-        <Button onClick={handleUpload} text="Upload again"/>
-      </div>
-    )
+    return <Navigate to="/mirrr/nodata"/>
   }
+
+   
   
 }
 

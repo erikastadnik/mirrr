@@ -9,6 +9,7 @@ import Display from './components/Display'
 import Footer from './components/Footer'
 import Upload from './components/Upload'
 import Home from './components/Home'
+import NoData from './components/NoData'
 //modules:
 import { parse } from './modules/dataParse'
 import store from './store.js'
@@ -26,9 +27,7 @@ import store from './store.js'
 
 const App = () => {
 
-  const [data, setData] = useState(store.getState().data)
-
-  console.log(data)
+  
 
 
   return (
@@ -42,7 +41,9 @@ const App = () => {
           <Routes>
             <Route path="mirrr/" element={<Home />}/>
             <Route path="mirrr/upload" element={<Upload />}/>
-            <Route path="mirrr/data" element={<Display />}/>           
+            <Route path="mirrr/data" element={<Display />}/>  
+            <Route path="mirrr/nodata" element={<NoData />}/> 
+                    
           </Routes>
           </div>
         
