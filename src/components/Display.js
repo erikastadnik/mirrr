@@ -51,7 +51,7 @@ const Display = () => {
     const parsedData = parse(data)
     return(
       <div className="flex w-full">
-        <div className="flex basis-5/6 "> 
+        {/* <div className="flex basis-5/6 "> 
           <Chart />
         </div>
         <div className="flex flex-col justify-between basis-1/6 p-6">
@@ -61,7 +61,7 @@ const Display = () => {
           <div className="p-20">
              <Button onClick={handleClear} text="Clear"/>
           </div>
-        </div>
+        </div> */}
       </div>
     )
   } else {
