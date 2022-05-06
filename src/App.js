@@ -37,7 +37,7 @@ const App = () => {
           <div className="flex-none">
             <Header />
           </div>
-          <ErrorBoundary>
+          
           <div className="flex h-full place-content-center">
           <Routes>
             <Route path="mirrr/" element={<Home />}/>
@@ -47,7 +47,7 @@ const App = () => {
                                 
           </Routes>
           </div>
-          </ErrorBoundary>
+          
         
           <div className="fixed inset-x-0 bottom-0">
            <Footer />
