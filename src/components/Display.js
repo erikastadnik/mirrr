@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, { useState, useEffect } from 'react'
 import { useNavigate, Navigate} from "react-router-dom"
 import store from '../store'
 import { uploadData } from '../reducers/dataReducer'
@@ -14,7 +14,12 @@ const Display = () => {
  
 
   
-  const [data, setData] = useState(store.getState().data)
+  const [data, setData] = useState(null)
+
+  useEffect(() => {
+    const fetchedData = store.getState().data
+    setData(fetchedData)
+  }, [data])
 
   const navigate = useNavigate()
 
@@ -22,6 +27,10 @@ const Display = () => {
     store.dispatch(uploadData(null))
     navigate('/mirrr')
 
+  }
+
+  const handleUpload = () => {
+    navigate('/mirrr/upload')
   }
 
   // axios
@@ -57,7 +66,13 @@ const Display = () => {
       </div>
     )
   } else {
-    return <Navigate to="/mirrr/nodata"/>
+    //return <Navigate to="/mirrr/nodata"/>
+    return (
+      <div className="flex flex-col justify-center items-center">
+        <p className="text-light_text font-mono text-sm p-20">no data</p>
+        <Button onClick={handleUpload} text="Upload again"/>
+      </div>
+    )
   }
 
    
