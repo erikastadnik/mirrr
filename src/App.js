@@ -10,7 +10,6 @@ import Footer from './components/Footer'
 import Upload from './components/Upload'
 import Home from './components/Home'
 import NoData from './components/NoData'
-import { ErrorBoundary } from './components/ErrorBoundary'
 //modules:
 import { parse } from './modules/dataParse'
 import store from './store.js'
@@ -44,6 +43,7 @@ const App = () => {
             <Route path="mirrr/upload" element={<Upload />}/>
             
             <Route path="mirrr/data" element={<Display />}/> 
+            <Route element={<Home />}/>
                                 
           </Routes>
           </div>

@@ -5,7 +5,7 @@ import { uploadData } from '../reducers/dataReducer'
 import Chart from './Chart'
 import { parse } from '../modules/dataParse'
 import Button from './Button'
-import { ErrorBoundary } from './ErrorBoundary'
+
 
 
 const Display = () => {
@@ -44,7 +44,7 @@ const Display = () => {
     const parsedData = parse(data)
     return(
       <div className="flex w-full">
-        <ErrorBoundary>
+        
         <div className="flex basis-5/6 "> 
           <Chart />
         </div>
@@ -56,7 +56,7 @@ const Display = () => {
              <Button onClick={handleClear} text="Clear"/>
           </div>
         </div>
-        </ErrorBoundary>
+        
       </div>
     )
   } else {
