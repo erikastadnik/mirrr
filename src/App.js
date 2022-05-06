@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import {
   BrowserRouter as Router,
-  Routes, Route
+  Routes, Route, HashRouter
 } from "react-router-dom"
 //componenets:
 import Header from './components/Header'
@@ -31,7 +31,7 @@ const App = () => {
 
 
   return (
-      <Router >
+      <HashRouter >
         <div className="flex flex-col w-screen h-screen">
           <div className="flex-none">
             <Header />
@@ -53,7 +53,7 @@ const App = () => {
            <Footer />
           </div>
         </div>
-      </Router>
+      </HashRouter>
   )
 }
 
