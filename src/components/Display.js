@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { useNavigate } from "react-router-dom"
 import store from '../store'
 import { uploadData } from '../reducers/dataReducer'
@@ -8,19 +8,30 @@ import Button from './Button'
 
 
 
+
 const Display = () => {
  
-  const data = store.getState().data
+
+  
+  const [data, setData] = useState(store.getState().data)
 
   const navigate = useNavigate()
 
   const handleClear = () => {
     store.dispatch(uploadData(null))
     navigate('/mirrr')
+
+  }
+
+  window.onbeforeunload = (event) => {
+    setData(null)
+    store.dispatch(uploadData(null))
+    console.log("unloaded")
   }
 
   const handleUpload = () => {
       navigate('/mirrr/upload')
+      
   }
 
   console.log(data)

@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom"
+import React from 'react'
 
 const Header = () => {
-  
+
+ 
   
   return (
     <div className="max-w-10xl mx-auto px-0">

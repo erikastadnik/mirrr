@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import {
   BrowserRouter as Router,
   Routes, Route
@@ -17,6 +17,7 @@ import store from './store.js'
 
 
 
+
 //const data = store.getState().data
 
 //const parsedData = parse(data)
@@ -25,7 +26,9 @@ import store from './store.js'
 
 const App = () => {
 
- 
+  const [data, setData] = useState(store.getState().data)
+
+  console.log(data)
 
 
   return (
