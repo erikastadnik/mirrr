@@ -253,7 +253,7 @@ const Chart = () => {
     const simulation = d3.forceSimulation(obj)
           .force("center", d3.forceCenter().x(width / 2).y(height / 2)) // Attraction to the center of the svg area
           .force("charge", d3.forceManyBody().strength(0.01)) // Nodes are attracted one each other of value is > 0
-          .force("collide", d3.forceCollide().strength(0.5).radius(function(d) {return radius(d) + 2}).iterations(20)) // Force that avoids circle overlapping
+          .force("collide", d3.forceCollide().strength(0.5).radius(function(d) {return radius(d) + 2}).iterations(1)) // Force that avoids circle overlapping
   
           simulation
           .nodes(obj)
