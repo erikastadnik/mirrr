@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/mirrr/static/css/main.e0e36a49.css",
-    "main.js": "/mirrr/static/js/main.62ca8599.js",
+    "main.js": "/mirrr/static/js/main.b993efa3.js",
     "static/media/Instructions-02.png": "/mirrr/static/media/Instructions-02.fa8c993f18f0f007a56b.png",
     "static/media/Instructions-03.png": "/mirrr/static/media/Instructions-03.28e1bcf92b1a3d659a83.png",
     "static/media/Instructions-01.png": "/mirrr/static/media/Instructions-01.361f01593722d36a29e6.png",
     "index.html": "/mirrr/index.html",
     "main.e0e36a49.css.map": "/mirrr/static/css/main.e0e36a49.css.map",
-    "main.62ca8599.js.map": "/mirrr/static/js/main.62ca8599.js.map"
+    "main.b993efa3.js.map": "/mirrr/static/js/main.b993efa3.js.map"
   },
   "entrypoints": [
     "static/css/main.e0e36a49.css",
-    "static/js/main.62ca8599.js"
+    "static/js/main.b993efa3.js"
   ]
 }
