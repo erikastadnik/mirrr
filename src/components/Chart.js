@@ -24,6 +24,9 @@ const Chart = () => {
   const labels = parsedData.map(x => x[0])
   const frequencies = parsedData.map(x => x[1])
 
+  //const labels = hardcodedLabels
+  //const frequencies = hardcodedFrequencies
+
   //console.log(labels.splice(0,100))
   //console.log(frequencies.splice(0,100))
 
@@ -95,7 +98,8 @@ const Chart = () => {
             .attr("height", "100%")
             .attr("viewBox", [0, 0, width, height])
             .call(zoom)
- 
+
+    
     //creating the nodes
     const node = svg.append("g")
                     .selectAll("circle")

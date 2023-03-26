@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react'
-import { useNavigate, Navigate} from "react-router-dom"
-import store from '../store'
+import { useNavigate } from "react-router-dom"
 import { uploadData } from '../reducers/dataReducer'
-import Chart from './Chart'
 import { parse } from '../modules/dataParse'
+import store from '../store'
+import Chart from './Chart'
 import Button from './Button'
+
 
 
 
@@ -42,6 +43,8 @@ const Display = () => {
   if (data) {
 
     const parsedData = parse(data)
+
+    
     return(
       <div className="flex w-full">
         
